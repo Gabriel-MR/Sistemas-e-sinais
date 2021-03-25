@@ -117,7 +117,7 @@ for n = 0 : N-1                     % N pontos
       
 end
 
-Xn  = fftshift(Xn/N);                 % rotaciona o resultado de Fourier
+Xn  = fftshift(Xn);                 % rotaciona o resultado de Fourier
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 toc;                                % estima o tempo de duracao
