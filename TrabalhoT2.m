@@ -53,7 +53,7 @@
 %%     WNm = Jotas.^nk;       % matriz Fourier
 %%
 %%     Xn = WNm*gk            % Fourier
-%%     Xn  = fftshift(Xn/N);    % rotaciona o resultado de Fourier
+%%     Xn  = fftshift(Xn/N);  % rotaciona o resultado de Fourier
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 1 - Preparacao do codigo 
