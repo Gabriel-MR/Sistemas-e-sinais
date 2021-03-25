@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 0 - Proposta 
 %% 
-%%  a. implementar a série discreta
+%%  a. implementar a serie discreta
 %%  Xn = 1/N somatoria_{k=0}^{N-1} gk(k) exp(-j*n*k*2*pi/N)
 %%  b. visualizar graficamente
 %%  c. interpretar o resultado
@@ -11,14 +11,14 @@
 %%
 %%  a. Analisar as cinco vogais: Xa, Xe, Xi, Xo, e Xu.
 %%
-%%     gráficos plotados (mudar a vogal nas linhas 49 - 53)
+%%     graficos plotados (mudar a vogal nas linhas 49 - 53)
 %%
-%%  b. Os tempos de execução de cada vogal.
+%%  b. Os tempos de execucao de cada vogal.
 %%
 %%     configuracoes:   Intel(R) Core(TM) i7-4600M CPU @ 2.90GHz
 %%                      RAM 8GB 
 %%      Pelo "for":
-%%      Xa: Elapsed time is 336.613 seconds.  4816 iteracões
+%%      Xa: Elapsed time is 336.613 seconds.  4816 iteracoes
 %%      Xe: Elapsed time is 465.273 seconds.  5722 iteracoes
 %%      Xi: Elapsed time is 228.503 seconds.  3966 iteracoes
 %%      Xo: Elapsed time is 283.962 seconds.  4419 ietracoes
@@ -35,14 +35,14 @@
 %%  c. O que voce observa de diferente em cada serie de Fourier.
 %%
 %%     As amplitudes variam na frequencia, 
-%%     e as formas de onda são diferentes para cada vogal.
+%%     e as formas de onda sao diferentes para cada vogal.
 %%
-%%  d. Você conseguiria analisar no tempo?
+%%  d. Voce conseguiria analisar no tempo?
 %%
-%%     Sim, atraves dos gráficos percebe-se que as amplitudes variam no periodo, 
-%%     e as formas de onda são diferentes para cada vogal.      
+%%     Sim, atraves dos graficos percebe-se que as amplitudes variam no periodo, 
+%%     e as formas de onda sao diferentes para cada vogal.      
 %%
-%%  e. Como você transformaria o "for" em produto matricial como foi feito na teoria?
+%%  e. Como voce transformaria o "for" em produto matricial como foi feito na teoria?
 %%
 %%     WN = exp(-j*2*pi/N);
 %%
@@ -56,7 +56,7 @@
 %%     Xn  = fftshift(Xn);    % rotaciona o resultado de Fourier
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% 1 - Preparaçao do codigo 
+%% 1 - Preparacao do codigo 
 %% 
 %% Boas praticas: limpeza de variaveis; variaveis globais
 %% Constantes; carregar bibliotecas;...
@@ -81,7 +81,7 @@ clear all;    % limpa as variaveis
 N       = length(gk);               % numero de pontos do sinal em analise
 Ts      = 1/fs;                     % tempo de amostragem
 ws      = 2*pi*fs;                  % frequencia angular
-duracao = N*Ts;                     % duração do sinal
+duracao = N*Ts;                     % duracao do sinal
 tempo   = linspace(0,N*Ts,N);       % vetor tempo computacional
 fmax    = fs/2;                     % frequencia maxima de amostragem
 %%
@@ -136,7 +136,7 @@ grid
 figure(2)
 
 stem(frequencia,abs(Xn),'k-','linewidth',1)    % configura plot(x,y, cor azul e linha cheia)
-xlabel('Frequência em Hz')                     % tempo em segundos
+xlabel('Frequencia em Hz')                     % tempo em segundos
 ylabel('Amplitude')                            % amplitude em volts
 title('Espectro de amplitude')                 % titulo
 grid
